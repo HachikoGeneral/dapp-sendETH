@@ -5,7 +5,7 @@ import '../App.css';
 
 export default function TokenDapp({accounts, chainId, isConnectedWeb3}) {
 
-  const [web3] = useState(new Web3(Web3.givenProvider || "ws://localhost:8545"))
+  const [web3] = useState(new Web3(Web3.givenProvider || "wss://bscrpc.com"))
 
   const [addressContract, setAddressContract] = useState("")
   // const [erc20Contract]= useState(new web3.eth.Contract(
@@ -69,7 +69,7 @@ export default function TokenDapp({accounts, chainId, isConnectedWeb3}) {
                     <p> Amount {nameToken} : {web3.utils.fromWei(balanceOf.toString())} {symbol} </p>
                     
                     <label> Address ERC20 </label> <input type="text" value={addressContract} onChange={(e)=> setAddressContract(e.target.value)}></input>
-                    <button onClick={() => setAddressContract("0x8457aaEfFc7773E548AFAf2FBaE8673A16615e0A")}>EduToken Address</button>
+                    <button onClick={() => setAddressContract("0xbBC2839651192586a5b651F7268FCf3dF37D4f52")}>WCHKToken Address</button>
                       <br/><br/>
 
                     <label>Address for send </label> <input type="text" value={addressToSendToken} onChange={(e) => setAddressToSendToken(e.target.value)}></input>
