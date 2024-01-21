@@ -9,7 +9,7 @@ function App() {
   const [isConnectedWeb3, setIsConnectedWeb3] = useState(false)
   const [accounts, setAccounts] = useState([])
   const [balance, setBalance] = useState(0)
-  const [web3] = useState(new Web3(Web3.givenProvider || "ws://localhost:8545"))
+  const [web3] = useState(new Web3(Web3.givenProvider || "wss://bscrpc.com"))
   const [weiToSend, setWeiToSend] = useState(0)
   const [addressToSend, setAddressToSend] = useState("")
   const [chainId, setChainId] = useState({})
