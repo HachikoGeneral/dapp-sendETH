@@ -8,6 +8,5 @@
       "networkId":56,
       "nativeCurrency": {"name":"BNB","symbol":"BNB","decimals":18},
       "rpc": ["https://bscrpc.com"]
-    {
-     
+    {  
   ]
